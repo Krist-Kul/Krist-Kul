@@ -14,16 +14,27 @@ STATIC = os.environ.get("STATIC") == "1"
 USER = "krist@github"
 # (key, value) rows; a value may be a list to wrap across several lines. None = blank spacer.
 ROWS = [
-    ("Name", "Krist Kul"),
-    ("Now", "Your current role @ Company"),
-    ("Prev", "Previous role @ Company"),
-    ("Location", "City, Country"),
+    ("Name", "Kritchanat Kulwanich (Krist)"),
+    ("Now", "Founder · CEO & CFO @ Nightseat"),
+    ("Study", "B.Sc. ICT @ Mahidol · AI minor"),
+    ("Prev", "Prompt Engineer intern @ Anything Everything"),
+    ("Location", "Bangkok, TH · UTC+7"),
+    ("Open to", "AI Engineer roles · 2026"),
     None,
-    ("Stack", ["Python · TypeScript · Go", "React · Node · PostgreSQL", "Docker · AWS · GitHub Actions"]),
+    ("Stack", ["PyTorch · Transformers · CNNs · VGGT", "Python · C/C++ · JavaScript · SQL · Git", "RAG · Evals · Prompt Eng. · Point Clouds"]),
     None,
-    ("Highlights", ["Shipped something you're proud of", "Won / built / led something notable", "Open-source thing people use"]),
+    (
+        "Highlights",
+        [
+            "Few-shot 3D volumetrics · Mahidol × SCG",
+            "Chula Genie AI chatbot for Chulalongkorn",
+            "In-house ERP @ Yongheng Rubber",
+            "ICT Student Assoc. treasurer · clean audit",
+        ],
+    ),
     None,
-    ("Contact", "you@example.com"),
+    ("Languages", "Thai · English · Chinese · Japanese"),
+    ("Contact", ["champkritchanat04@gmail.com", "nightseat.com"]),
 ]
 
 W = 560
