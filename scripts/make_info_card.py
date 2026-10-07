@@ -15,9 +15,8 @@ USER = "krist@github"
 # (key, value) rows; a value may be a list to wrap across several lines. None = blank spacer.
 ROWS = [
     ("Name", "Kritchanat Kulwanich (Krist)"),
-    ("Now", "Founder · CEO & CFO @ Nightseat"),
     ("Study", "B.Sc. ICT @ Mahidol · AI minor"),
-    ("Prev", "Prompt Engineer intern @ Anything Everything"),
+    ("Prev", ["Prompt Engineer intern @ Anything Everything", "AI Engineer intern @ SCG"]),
     ("Location", "Bangkok, TH · UTC+7"),
     ("Open to", "AI Engineer roles · 2026"),
     None,
@@ -34,7 +33,7 @@ ROWS = [
     ),
     None,
     ("Languages", "Thai · English · Chinese · Japanese"),
-    ("Contact", ["champkritchanat04@gmail.com", "nightseat.com"]),
+    ("Contact", ["champkritchanat04@gmail.com"]),
 ]
 
 W = 560
@@ -93,8 +92,9 @@ def main() -> None:
         ""
         if STATIC
         else """<style>
-.ln{opacity:0;animation:in .45s ease-out forwards}
+.ln{animation:in .45s ease-out both}
 @keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){.ln{animation:none}}
 </style>"""
     )
 

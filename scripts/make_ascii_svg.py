@@ -73,9 +73,13 @@ def main() -> None:
             body.append(text)
             continue
         begin = f"{t:.2f}s"
+        row_w = PAD + text_len - x0
+        # Base width is the full row and the animation starts at 0s holding 0 until this row's turn, so a
+        # renderer that never runs SMIL still shows the finished portrait instead of a blank box.
+        total = t + ROW_DUR
         defs.append(
-            f'<clipPath id="r{i}"><rect x="{x0:.1f}" y="{top:.1f}" width="0" height="{CELL_H}">'
-            f'<animate attributeName="width" from="0" to="{PAD + text_len - x0:.1f}" begin="{begin}" dur="{ROW_DUR}s" fill="freeze"/>'
+            f'<clipPath id="r{i}"><rect x="{x0:.1f}" y="{top:.1f}" width="{row_w:.1f}" height="{CELL_H}">'
+            f'<animate attributeName="width" values="0;0;{row_w:.1f}" keyTimes="0;{t / total:.4f};1" begin="0s" dur="{total:.2f}s" fill="freeze"/>'
             f"</rect></clipPath>"
         )
         body.append(f'<g clip-path="url(#r{i})">{text}</g>')

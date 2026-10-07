@@ -91,8 +91,9 @@ def main() -> None:
         ""
         if STATIC
         else """<style>
-.c{opacity:0;transform-box:fill-box;transform-origin:center;animation:drop .5s cubic-bezier(.2,.8,.2,1) forwards}
+.c{transform-box:fill-box;transform-origin:center;animation:drop .5s cubic-bezier(.2,.8,.2,1) both}
 @keyframes drop{from{opacity:0;transform:translateY(-10px) scale(.6)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.c{animation:none}}
 </style>"""
     )
 
