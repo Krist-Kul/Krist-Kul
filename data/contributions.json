@@ -1,9 +1,9 @@
 {
   "username": "Krist-Kul",
-  "fetched_at": "2026-11-07T13:13:53+00:00",
-  "total": 254,
-  "current_streak": 31,
-  "longest_streak": 31,
+  "fetched_at": "2026-11-08T13:35:29+00:00",
+  "total": 255,
+  "current_streak": 32,
+  "longest_streak": 32,
   "best_day": {
     "date": "2026-04-04",
     "count": 39
@@ -21,44 +21,9 @@
     "2026-08": 9,
     "2026-09": 46,
     "2026-10": 55,
-    "2026-11": 6
+    "2026-11": 7
   },
   "days": [
-    {
-      "date": "2025-11-02",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-03",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-04",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-05",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-06",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-07",
-      "level": 0,
-      "count": 0
-    },
-    {
-      "date": "2025-11-08",
-      "level": 0,
-      "count": 0
-    },
     {
       "date": "2025-11-09",
       "level": 0,
@@ -1876,6 +1841,11 @@
     },
     {
       "date": "2026-11-07",
+      "level": 1,
+      "count": 1
+    },
+    {
+      "date": "2026-11-08",
       "level": 0,
       "count": 0
     }
