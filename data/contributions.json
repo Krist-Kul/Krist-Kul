@@ -1,9 +1,9 @@
 {
   "username": "Krist-Kul",
-  "fetched_at": "2026-11-20T15:34:23+00:00",
-  "total": 182,
-  "current_streak": 45,
-  "longest_streak": 45,
+  "fetched_at": "2026-11-21T14:45:14+00:00",
+  "total": 187,
+  "current_streak": 46,
+  "longest_streak": 46,
   "best_day": {
     "date": "2026-04-04",
     "count": 39
@@ -21,7 +21,7 @@
     "2026-08": 9,
     "2026-09": 0,
     "2026-10": 29,
-    "2026-11": 31
+    "2026-11": 36
   },
   "days": [
     {
@@ -1872,7 +1872,12 @@
     {
       "date": "2026-11-20",
       "level": 1,
-      "count": 1
+      "count": 2
+    },
+    {
+      "date": "2026-11-21",
+      "level": 2,
+      "count": 4
     }
   ]
 }
